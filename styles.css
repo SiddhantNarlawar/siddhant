@@ -1,0 +1,318 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Pinyon+Script&display=swap');
+
+
+/* General Styles */
+body {
+  font-family: "Molle", cursive;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  background-color: #070605; /* dark background */
+  color: #F8F8F8; /* light text */
+  line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6,title {
+  font-family: "Alike Angular", serif;
+  font-style: normal;
+}
+
+/* Header */
+header {
+  background-color: #121212;
+  color: #F8F8F8;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  font-weight: 500;
+}
+
+header h1 {
+  font-family: 'Pirata One', cursive;
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 3px;
+  font-family: "Molle", cursive;
+  font-style: italic;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav a {
+  color: #F8F8F8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e67e22; /* orange accent */
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.intro h2 {
+  font-family: 'Pirata One', cursive;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  font-family: "Alike Angular", serif;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #ccc;
+}
+
+.intro figure {
+  margin: 0;
+}
+
+.intro img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 0 15px #e67e22;
+}
+
+.intro figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #aaa;
+}
+
+/* About Section */
+.about h2 {
+  font-family: 'Pirata One', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #e67e22;
+}
+
+.about p {
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.about ul {
+  list-style: square inside;
+  padding-left: 0;
+  color: #ccc;
+}
+
+.about ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Projects Section */
+.projects h2 {
+  font-family: 'Pirata One', cursive;
+  font-size: 2.5rem;
+  color: #e67e22;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.projects .project {
+  background-color: #121212;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 15px rgba(230, 126, 34, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.projects .project:hover {
+  box-shadow: 0 0 25px #e67e22;
+}
+
+.projects .project h3 {
+  margin-top: 0;
+  font-family: 'Pirata One', cursive;
+  color: #e67e22;
+  font-size: 1.5rem;
+}
+
+.projects .project p {
+  color: #ccc;
+  margin: 0.5rem 0 1rem;
+}
+
+.projects .project img {
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #e67e22;
+  display: block;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.projects .project  img:hover {
+  transform: scale(2);
+}
+
+.projects .project a {
+  display: inline-block;
+  background-color: #2980b9;
+  color: #F8F8F8;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.projects .project a:hover {
+  background-color: #cafa08;
+}
+
+/* Contact Section */
+.contact h2 {
+  font-family: 'Pirata One', cursive;
+  font-size: 2.5rem;
+  color: #e67e22;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  color: #ccc;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #3498db;
+}
+
+/* Contact Form */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #121212;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(230, 126, 34, 0.4);
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: #cafa08;
+  border-radius: 6px;
+  background-color: #333;
+  color: #eee;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact textarea {
+  min-height: 100px;
+}
+
+.contact button {
+  background-color: #e67e22;
+  color: #070605;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact button:hover {
+  background-color: #cf6c0f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #121212;
+  color: #aaa;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .intro h2 {
+    font-size: 2.5rem;
+  }
+
+  .projects .project {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact form {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h2 {
+    font-size: 2rem;
+  }
+}
